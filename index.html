@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choz – Tech Outreach Playbook</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1><span class="brand">Choz</span> — Personalized Outreach Generator</h1>
+    <p class="sub">Create smart, dynamic outreach strategies to land your dream role in tech.</p>
+
+    <form id="playbook-form">
+      <div class="field-group">
+        <label for="yourname">Your Name</label>
+        <input type="text" id="yourname" placeholder="e.g. Jordan Smith" required />
+      </div>
+
+      <div class="field-group">
+        <label for="persona">Target Job Title</label>
+        <input type="text" id="persona" placeholder="e.g. Account Executive" value="Account Executive" required />
+      </div>
+
+      <div class="field-group">
+        <label for="goal">Outreach Goal</label>
+        <select id="goal" required>
+          <option value="">-- Select Goal --</option>
+          <option value="book-call">Request Informational Interview</option>
+          <option value="introduce-product">Pitch Yourself as a Candidate</option>
+          <option value="follow-up-demo">Follow Up After Career Fair</option>
+        </select>
+      </div>
+
+      <button type="submit" class="generate-btn">🚀 Generate My Playbook</button>
+    </form>
+
+    <div id="output" class="hidden">
+      <h2>Your Personalized Outreach Playbook</h2>
+      <div id="result-content"></div>
+      <button id="download-btn" class="download-btn">💾 Download Playbook</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
